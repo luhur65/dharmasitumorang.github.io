@@ -1,0 +1,14 @@
+.subheading a {
+    text-transform: lowercase;
+}
+
+@media screen and (max-width: 411px) {
+    .my-name {
+        font-size: 58px;
+    }
+
+    .subheading {
+        font-size: 20px;
+    }
+
+}
