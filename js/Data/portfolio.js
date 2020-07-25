@@ -30,7 +30,7 @@ const Portfolio = [
     {
         'title' : 'Car Racing',
         'subtitle': 'Car Racing Game Application',
-        'img_app': 'racing_cars.png',
+        'img_app': 'racing-cars.png',
         'link_source' : undefined,
         'date_created' : 'Mei 2020'
     },
