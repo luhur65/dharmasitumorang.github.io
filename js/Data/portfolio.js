@@ -31,7 +31,7 @@ const Portfolio = [
         'title' : 'Car Racing',
         'subtitle': 'Car Racing Game Application',
         'img_app': 'racing-cars.png',
-        'link_source' : undefined,
+        'link_source' : 'https://game-car-race.netlify.app/',
         'date_created' : 'Mei 2020'
     },
     {
