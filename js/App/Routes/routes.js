@@ -1,4 +1,5 @@
 import renderCertificate from "../Script/Certificate.js";
+import renderEducation from "../Script/Education.js";
 import renderPortfolio from "../Script/Portfolio.js";
 const RoutingPage = page => {
 
@@ -12,9 +13,9 @@ const RoutingPage = page => {
             renderCertificate();
             break;
 
-        // case 'education':
-            
-        //     break;
+        case 'education':
+            renderEducation();
+            break;
 
         case 'portfolio':
             renderPortfolio();
