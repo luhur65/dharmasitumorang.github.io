@@ -16,7 +16,7 @@ const renderPortfolio = _ => {
                 <h3 class="mb-0">${p.title}</h3>
                 <div class="subheading mb-3">${p.subtitle}</div>
                 <figure class="figure">
-                    <img src="./assets/portfolio/${p.img_app}" class="figure-img img-fluid rounded" alt="Image ${p.title}">
+                    <img src="./assets/portfolio/${p.img_app}" loading="lazy" class="figure-img img-fluid rounded" alt="Image ${p.title}">
                     <figcaption class="figure-caption">
                         <a href="${urlLink}" target="_blank">${textLink}</a>
                     </figcaption>
