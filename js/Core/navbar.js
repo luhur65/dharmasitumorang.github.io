@@ -4,7 +4,7 @@ const content = document.querySelector("#dinamic-content");
 const getContentByFetch = (content = "") => {
 
     const page404 = `
-    <section class="resume-section" id="about">
+    <section class="resume-section">
         <div class="resume-section-content">
             <div class="text-center">
                 <h2 class="error mx-auto text-danger">404</h2>
@@ -62,14 +62,17 @@ const NavbarInit = async _ => {
 
     // Load Page Content
     let page = window.location.hash.substr(1);
-    if (page === "" || page == "top") page = "about";
+    if (page === "" || page == "top") {
+        // Code
 
-    content.innerHTML = await getContentByFetch(`pages/${page}.html`);
-    RoutingPage(page);
+    } else {
+
+        content.innerHTML = await getContentByFetch(`pages/${page}.html`);
+        RoutingPage(page);
+    }
 
     const navbar = await getContentByFetch('nav.html');
     renderLinkNav(navbar);
-
 }
 
 export default NavbarInit;
