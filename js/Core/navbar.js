@@ -61,15 +61,12 @@ const renderLinkNav = (navContent = "") => {
 const NavbarInit = async _ => {
 
     // Load Page Content
-    let page = window.location.hash.substr(1);
-    if (page === "" || page == "top") {
-        // Code
-
-    } else {
-
+    let page = window.location.hash.substr(1).toLowerCase();
+    if (page !== "") {
         content.innerHTML = await getContentByFetch(`pages/${page}.html`);
         RoutingPage(page);
-    }
+
+    } 
 
     const navbar = await getContentByFetch('nav.html');
     renderLinkNav(navbar);

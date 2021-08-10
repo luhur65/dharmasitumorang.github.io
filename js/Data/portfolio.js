@@ -24,14 +24,14 @@ const Portfolio = [
         'title' : 'Awesome Gallery',
         'subtitle': 'Downloader Image Gallery Application',
         'img_app': 'pict_gallery.png',
-        'link_source' : undefined,
+        'link_source': 'https://awesome-pict.netlify.app/',
         'date_created' : 'Juni 2020'
     },
     {
         'title' : 'Car Racing',
         'subtitle': 'Car Racing Game Application',
         'img_app': 'racing-cars.png',
-        'link_source' : undefined,
+        'link_source': 'https://game-car-race.netlify.app/',
         'date_created' : 'Mei 2020'
     },
     {

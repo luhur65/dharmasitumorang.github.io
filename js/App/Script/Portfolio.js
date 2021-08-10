@@ -7,8 +7,8 @@ const renderPortfolio = _ => {
 
     Portfolio.forEach(p => {
 
-        const textLink = (p.link_source != undefined) ? p.link_source : 'Link is Broken!!';
-        const urlLink = (p.link_source != undefined) ? p.link_source : '#broken-link';
+        const textLink = (p.link_source != undefined) ? p.link_source : 'Site was Unactivated';
+        const urlLink = (p.link_source != undefined) ? p.link_source : 'javascript:void()';
 
         DOMRender.innerHTML += `
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -18,12 +18,13 @@ const renderPortfolio = _ => {
                 <figure class="figure">
                     <img src="./assets/portfolio/${p.img_app}" loading="lazy" class="figure-img img-fluid rounded" alt="Image ${p.title}">
                     <figcaption class="figure-caption">
-                        <a href="${urlLink}" target="_blank">${textLink}</a>
+                        <span>Visit Site :</span>
+                        <a href="${urlLink}" target="_blank" class="badge badge-light p-2">${textLink}</a>
                     </figcaption>
                 </figure>
             </div>
             <div class="flex-shrink-0">
-                <span class="text-primary">${p.date_created}</span>
+                <span class="badge badge-primary p-1">${p.date_created}</span>
             </div>
         </div>
         `;
